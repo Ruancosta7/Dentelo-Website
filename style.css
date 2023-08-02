@@ -926,13 +926,13 @@ footer .contact img {
     }
 
     .service-container {
-        padding: 95px 0px 0px 0px;
         height: 80vh;
         background-position: bottom;
         margin: 0px 200px;
     }
 
     .services-title {
+        padding: 95px 0px 0px 0px;
         margin-bottom: none;
     }
 
