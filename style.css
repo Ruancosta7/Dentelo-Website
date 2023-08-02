@@ -29,13 +29,15 @@ button {
 header {
     display: flex;
     height: 7vh;
-    align-items: center;
-    justify-content: space-between;
     position: sticky;
     top: 0;
+    align-items: center;
+    justify-content: space-between;
     background-color: ghostwhite;
     z-index: 3;
 }
+
+
 
 header>.main-nav, .nav-button {
     display: none;
@@ -149,11 +151,9 @@ main .main-banner img {
     width: 90%;
 }
 
-.service-container {
-    margin-top: 50px;
-}
 
 .services-title {
+    padding: 60px 0px 0px 0px;
     text-align: center;
 }
 
@@ -196,7 +196,7 @@ main .main-banner img {
 }
 
 .about-us {
-    margin-top: 50px;
+    padding: 55px 0px 0px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -328,7 +328,7 @@ main .main-banner img {
 }
 
 .blog-title {
-    margin-top: 50px;
+    padding: 55px 0px 0px 0px;
     text-align: center;
 }
 
@@ -392,7 +392,7 @@ main .main-banner img {
 }
 
 footer {
-    margin-top: 50px;
+    padding: 55px 0px 0px 0px;
     background-color: hsl(218, 70%, 18%);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -533,6 +533,7 @@ footer .contact img {
     }
 
     .services-title {
+        padding: 75px 0px 0px 0px;
         font-size: 1.3em;
     }
 
@@ -541,6 +542,7 @@ footer .contact img {
     }
 
     .about-us {
+        padding: 75px 0px 0px 0px;
         flex-direction: row;
     }
 
@@ -638,6 +640,7 @@ footer .contact img {
     }
 
     .blog-title {
+        padding: 75px 0px 0px 0px;
         font-size: 1.3em;
     }
 
@@ -752,22 +755,24 @@ footer .contact img {
     }
 
     .service-container {
+        margin-top: 0px;
+        padding: 0px;
         display: grid;
         background-image: url(assets/service-banner.png);
         background-repeat: no-repeat;
         background-position: center;
-        height: 90vh;
+        height: 100vh;
     }
 
     .services-title {
-        margin-top: 30px;
+        padding: 85px 0px 0px 0px;
         margin-bottom: auto;
     }
 
     .service-item {
         flex-direction: row;
         font-size: .9em;
-        width: 60%;
+        width: 50%;
         margin: 10px 0px;
     }
 
@@ -783,6 +788,7 @@ footer .contact img {
     }
 
     .service-text {
+        font-size: .9em;
         width: 70%;
     }
 
@@ -798,18 +804,19 @@ footer .contact img {
 
 
     .about-us {
+        padding: 85px 0px 0px 0px;
         flex-direction: row;
     }
 
     .about-banner {
-        width: 50%;
+        width: 40%;
     }
 
     .about-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: .9em;
+        font-size: 1.1em;
         width: 50%;
     }
 
@@ -856,12 +863,17 @@ footer .contact img {
         font-size: .8em;
     }
 
+    .blog-title {
+        padding: 85px 0px 0px 0px;
+    }
+
     .blog-grid {
         grid-template-columns: repeat(auto-fit, 350px);
         place-content: center;
     }
 
     .blog-card {
+
         width: 90%;
         font-size: .9em;
     }
@@ -914,8 +926,9 @@ footer .contact img {
     }
 
     .service-container {
-        height: 100vh;
-        background-position: center 300px;
+        padding: 95px 0px 0px 0px;
+        height: 80vh;
+        background-position: bottom;
         margin: 0px 200px;
     }
 
@@ -938,12 +951,16 @@ footer .contact img {
         width: 60%;
     }
 
+    .about-us {
+        padding: 95px 0px 0px 0px;
+    }
+
     .about-banner img {
-        width: 50%;
+        width: 70%;
     }
 
     .about-text {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .doctor-title {
@@ -951,7 +968,7 @@ footer .contact img {
     }
 
     .our-doctor {
-        grid-template-columns: repeat(auto-fit, 220px);
+        grid-template-columns: repeat(auto-fit, 230px);
         margin-bottom: 100px;
         place-content: center;
         gap: 20px;
@@ -977,6 +994,10 @@ footer .contact img {
 
     .appointment-banner img {
         height: 520px;
+    }
+
+    .blog-title {
+        padding: 95px 0px 0px 0px;
     }
 }
 
@@ -1015,9 +1036,11 @@ footer .contact img {
     .main-input button:active {
         background: linear-gradient(90deg, hsl(225, 68%, 53%), hsl(201, 92%, 47%));
     }
+
     .about-text button:active {
         background: linear-gradient(90deg, hsl(225, 68%, 53%), hsl(201, 92%, 47%));
     }
+
     .appointment-text button:active {
         background: linear-gradient(90deg, hsl(225, 68%, 53%), hsl(201, 92%, 47%));
     }
