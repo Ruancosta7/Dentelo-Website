@@ -1065,6 +1065,13 @@ footer .contact img {
         transition: .5s;
     }
 
+    .blog-img{
+        position: relative;
+        overflow: hidden;
+    }
+    .blog-card:is(:active) .blog-img img{
+        transform: scale(1.1);
+    }
 }
 
 /* Animações desktop */
@@ -1172,5 +1179,13 @@ footer .contact img {
         opacity: 1;
         transform: translateY(0);
         transition: .5s;
+    }
+
+    .blog-img{
+        position: relative;
+        overflow: hidden;
+    }
+    .blog-card:is(:hover) .blog-img img{
+        transform: scale(1.1);
     }
 }
